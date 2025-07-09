@@ -36,7 +36,7 @@ project {
 }
 
 object Build : BuildType({
-    name = "Build"
+    name = DslContext.getParameter("build_name")
 
     vcs {
         root(DslContext.settingsRoot)
